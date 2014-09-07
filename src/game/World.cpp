@@ -1421,19 +1421,24 @@ void World::SetInitialWorldSettings()
 
     sLog.outString("Deleting expired bans...");
     LoginDatabase.Execute("DELETE FROM ip_banned WHERE unbandate<=UNIX_TIMESTAMP() AND unbandate<>bandate");
+    sLog.outString();
 
     sLog.outString("Calculate next daily quest reset time...");
     InitDailyQuestResetTime();
+    sLog.outString();
 
     sLog.outString("Calculate next weekly quest reset time...");
     InitWeeklyQuestResetTime();
+    sLog.outString();
 
     sLog.outString("Calculate next monthly quest reset time...");
     SetMonthlyQuestResetTime();
+    sLog.outString();
 
     sLog.outString("Starting Game Event system...");
     uint32 nextGameEvent = sGameEventMgr.Initialize();
     m_timers[WUPDATE_EVENTS].SetInterval(nextGameEvent);    // depend on next event
+    sLog.outString();
 
     // Delete all characters which have been deleted X days before
     Player::DeleteOldCharacters();
@@ -1442,11 +1447,16 @@ void World::SetInitialWorldSettings()
 
     sLog.outString("Initialize AuctionHouseBot...");
     sAuctionBot.Initialize();
+    sLog.outString();
 
-    sLog.outString("WORLD: World initialized");
+    sLog.outString("---------------------------------------");
+    sLog.outString("      CMANGOS: World initialized       ");
+    sLog.outString("---------------------------------------");
+    sLog.outString();
 
     uint32 uStartInterval = WorldTimer::getMSTimeDiff(uStartTime, WorldTimer::getMSTime());
     sLog.outString("SERVER STARTUP TIME: %i minutes %i seconds", uStartInterval / 60000, (uStartInterval % 60000) / 1000);
+    sLog.outString();
 }
 
 void World::DetectDBCLang()
