@@ -48,7 +48,7 @@
 				AdditionalOptions="/MP /Zm200"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\game\vmap;..\..\dep\ACE_wrappers;..\..\dep\include\g3dlite;..\..\src\game"
-				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;"
+				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;DT_POLYREF64;"
 				StringPooling="false"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
@@ -131,7 +131,7 @@
 				AdditionalOptions="/MP /bigobj /Zm200"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\game\vmap;..\..\dep\ACE_wrappers;..\..\dep\include\g3dlite;..\..\src\game"
-				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;"
+				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;DT_POLYREF64;"
 				StringPooling="false"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
@@ -214,7 +214,7 @@
 				AdditionalOptions="/MP /Zm200"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\game\vmap;..\..\dep\ACE_wrappers;..\..\dep\include\g3dlite;..\..\src\game"
-				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;_SECURE_SCL=0"
+				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;DT_POLYREF64;_SECURE_SCL=0"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -296,7 +296,7 @@
 				AdditionalOptions="/MP /bigobj /Zm200"
 				InlineFunctionExpansion="1"
 				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\game\vmap;..\..\dep\ACE_wrappers;..\..\dep\include\g3dlite;..\..\src\game"
-				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;_SECURE_SCL=0"
+				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;DT_POLYREF64;_SECURE_SCL=0"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -378,7 +378,7 @@
 				AdditionalOptions="/MP"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\game\vmap;..\..\dep\ACE_wrappers;..\..\dep\include\g3dlite;..\..\src\game"
-				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;"
+				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;DT_POLYREF64;"
 				StringPooling="false"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
@@ -459,7 +459,7 @@
 				AdditionalOptions="/MP /bigobj"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\game\vmap;..\..\dep\ACE_wrappers;..\..\dep\include\g3dlite;..\..\src\game"
-				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;"
+				PreprocessorDefinitions="WIN32;_DEBUG;MANGOS_DEBUG;_LIB;DT_POLYREF64;"
 				StringPooling="false"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
@@ -1296,110 +1296,6 @@
 			</File>
 			<File
 				RelativePath="..\..\src\game\Player.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotMgr.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotMgr.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotClassAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotClassAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotDeathKnightAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotDeathKnightAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotDruidAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotDruidAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotHunterAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotHunterAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotMageAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotMageAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotPaladinAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotPaladinAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotPriestAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotPriestAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotRogueAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotRogueAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotShamanAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotShamanAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotWarlockAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\PlayerbotWarlockAI.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotWarriorAI.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\playerbot\PlayerbotWarriorAI.h"
 				>
 			</File>
 			<File
